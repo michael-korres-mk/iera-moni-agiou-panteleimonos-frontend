@@ -1,0 +1,50 @@
+{
+  "name": "com.ousiastic.iera_moni_agiou_panteleimonos_frontend",
+  "version": "1.0.1",
+  "description": "Ιστοχώρος Ιεράς Μονής Αγίου Παντελεήμονος Πετρουπόλεως",
+  "displayName": "Ιερά Μονή Αγίου Παντελεήμονος",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite",
+    "test": "vitest",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "1.5.3",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.0",
+    "cookie-es": "^1.0.0",
+    "destr": "^2.0.3",
+    "jwt-decode": "^3.1.2",
+    "moment": "2.29.4",
+    "pinia": "^2.1.7",
+    "ufo": "^1.4.0",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.6.5",
+    "vue-router": "^4.2.5",
+    "vue-toastification": "^2.0.0-rc.5",
+    "vue3-perfect-scrollbar": "^1.6.1",
+    "vuetify": "^3.5.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@iconify/vue": "^4.1.1",
+    "@intlify/unplugin-vue-i18n": "^3.0.1",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.71.1",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "unplugin-vue-router": "^0.8.4",
+    "vite": "^5.1.6",
+    "vite-plugin-vue-devtools": "^7.0.17",
+    "vite-plugin-vue-layouts": "^0.11.0",
+    "vite-plugin-vuetify": "^2.0.3"
+  }
+}

@@ -1,0 +1,837 @@
+/* stylelint-disable */
+@import './toastification';
+@import 'https://fonts.google.com/specimen/GFS+Didot?query=greek';
+
+// Write your overrides
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉 Root variables 👈👈👈👈👈👈👈👈👈👈👈👈         #
+//  ℹ️ Root variables                                                   #
+// <────────────────────────────────────────────────────────────────────#
+
+:root {
+  --darkblue-color: #0a3f93;
+  --darkred-color: #ac001a;
+  --lightblue-color: #6891c3;
+  --black-color: #222222;
+  --gray-color: #f0f0f0;
+  --lightgray-color: #f9f9f9;
+  --radius: 15px;
+}
+
+html {
+  font-family: "GFS+Didot",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉 Container 👈👈👈👈👈👈👈👈👈👈👈👈👈          #
+//  ℹ️ Container                                                        #
+// <────────────────────────────────────────────────────────────────────#
+
+.v-container {
+  padding: 15px !important;
+  background-color: #fff;
+}
+.v-container--fluid {
+  // z-index: 999;
+  // margin-block-start: -100px;
+  max-inline-size: 1500px !important;
+}
+
+.width-120 {
+  min-width: 120px;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉👉👉👉 Text Colors 👈👈👈👈👈👈👈👈👈👈👈👈👈👈 #
+//  ℹ️ Titles and text colors                                           #
+// <────────────────────────────────────────────────────────────────────#
+
+.text-black {
+  color: var(--black-color);
+}
+.text-darkblue {
+  color: var(--darkblue-color);
+}
+.text-darkred {
+  color: var(--darkred-color);
+}
+
+.text-green {
+  color: green;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-purple {
+  color: purple;
+}
+
+.page-title {
+  color: var(--darkblue-color);
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉👉 Fonts 👈👈👈👈👈👈👈👈👈👈👈👈👈👈           #
+//  ℹ️ Font sizes                                                       #
+// <────────────────────────────────────────────────────────────────────#
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-26 {
+  font-size: 26px;
+}
+.font-size-28 {
+  font-size: 28px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉 Background Colors 👈👈👈👈👈👈👈👈👈👈          #
+//  ℹ️ Background colors                                                #
+// <────────────────────────────────────────────────────────────────────#
+
+.bg-gray {
+  background-color: var(--gray-color);
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉👉 Buttons 👈👈👈👈👈👈👈👈👈👈👈👈👈           #
+//  ℹ️ Buttons custom style, colors, etc                                #
+// <────────────────────────────────────────────────────────────────────#
+
+.btn-moni-red-outline {
+  border: 1px solid var(--darkred-color);
+  margin: 20px;
+  background-color: white !important;
+  color: var(--darkred-color);
+}
+
+.btn-moni-red-outline:hover {
+  border: 1px solid var(--darkred-color);
+  margin: 20px;
+  background-color: var(--darkred-color) !important;
+  color: white;
+}
+
+.btn-moni-blue-outline {
+  border: 1px solid var(--darkblue-color);
+  margin: 20px;
+  background-color: white !important;
+  color: var(--darkblue-color);
+}
+
+.btn-moni-blue-outline:hover {
+  border: 1px solid var(--darkblue-color);
+  margin: 20px;
+  background-color: var(--darkblue-color) !important;
+  color: white;
+}
+.btn-moni-blue-outline-header {
+  border: 1px solid white;
+  margin: 0px;
+  background-color: white !important;
+  color: var(--darkblue-color);
+}
+
+.btn-moni-blue-outline-header:hover {
+  border: 1px solid black;
+  margin: 0px;
+  background-color: var(--lightblue-color) !important;
+  color: white;
+}
+
+.btn-moni-blue {
+  border: 1px solid var(--darkblue-color);
+  margin: 20px;
+  background-color: var(--darkblue-color) !important;
+  color: white;
+}
+
+.btn-moni-blue:hover {
+  border: 1px solid var(--darkblue-color);
+  margin: 20px;
+  background-color: var(--darkblue-color) !important;
+  color: white;
+}
+.btn-moni-red {
+  border: 1px solid var(--darkred-color);
+  margin: 20px;
+  background-color: var(--darkred-color) !important;
+  color: white;
+}
+
+.btn-moni-red:hover {
+  border: 1px solid var(--darkred-color);
+  margin: 20px;
+  background-color: var(--darkred-color) !important;
+  color: white;
+}
+
+.btn-darkblue {
+  margin: 20px;
+  background-color: var(--darkblue-color);
+  color: white;
+}
+
+.btn-lightblue {
+  margin: 20px;
+  background-color: var(--lightblue-color);
+  color: white;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉 Cards & Legend 👈👈👈👈👈👈👈👈👈👈👈         #
+//  ℹ️  Wrapper for card, legend, etc                                   #
+// <────────────────────────────────────────────────────────────────────#
+
+legend.filters-legend-title {
+  position: relative;
+  background-color: #fff;
+  color: var(--darkblue-color);
+  font-size: 1.2em !important;
+  font-weight: 600;
+  margin-block-start: 0px;
+  margin-inline-start: 0px;
+  padding-block: 0px;
+  padding-inline: 0px;
+  margin-bottom: -25px;
+}
+legend.legend-title {
+  position: relative;
+  background-color: #fff;
+  color: var(--darkblue-color);
+  font-size: 1.2em !important;
+  font-weight: 600;
+  margin-block-start: -30px;
+  margin-inline-start: 15px;
+  padding-block: 4px;
+  padding-inline: 4px;
+}
+
+//  ℹ️ Card wrapper with No-Legend
+.card-wrapper-nl {
+  background-color: #fff;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block-end: 0;
+}
+
+//  ℹ️ Card Wrapper for Filters Section
+.card-wrapper-filters {
+  padding: 10px;
+  border-radius: var(--radius);
+  background-color: var(--gray-color);
+  margin-block: 30px;
+  margin-inline: 0;
+  padding-block-end: 0;
+}
+
+//  ℹ️ Card Wrapper general
+.card-wrapper {
+  padding: 10px;
+  border: 3px solid var(--gray-color);
+  border-radius: var(--radius);
+  background-color: #fff;
+  margin-block: 30px;
+  margin-inline: 0;
+  padding-block-end: 0;
+}
+
+//  ℹ️ Card Body that contains everything
+.card-body {
+  flex: auto;
+  min-block-size: 1px;
+  padding-block: 10px 1rem;
+  padding-inline: 1rem;
+}
+.v-expansion-panel {
+  .card-body {
+    padding-inline: 0;
+  }
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉 Expansion Panels 👈👈👈👈👈👈👈👈👈👈👈         #
+//  ℹ️  Color, border, etc                                              #
+// <────────────────────────────────────────────────────────────────────#
+
+$v-application-wrap: '.v-application.v-layout .v-application__wrap';
+$border-radius-top: 15px 15px 0 0 !important;
+$border-radius-bottom: 0 0 15px 15px !important;
+$border-radius: 15px!important;
+$darkblue-color: var(--darkblue-color) !important;
+$darkred-color: var(--darkred-color) !important;
+
+.v-expansion-panel {
+  position: relative;
+  flex: 1 0 100%;
+  border: 1px solid #000;
+  border-radius: 0 !important;
+  max-inline-size: 100%;
+  transition: margin-block-start, border-radius, border,
+    max-inline-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-title {
+    background-color: $darkblue-color;
+    color: white !important;
+
+    &--active {
+      background-color: $darkred-color;
+    }
+  }
+}
+
+.v-expansion-panels {
+  &:not(.no-icon-rotate)
+    .v-expansion-panel--active
+    .v-expansion-panel-title__icon {
+    transform: rotate(90deg);
+  }
+
+  &:not(.expansion-panels-width-border) {
+    .v-expansion-panel:first-child:not(:last-child),
+    .v-expansion-panels--variant-accordion > :first-child {
+      border-radius: $border-radius-top;
+    }
+
+    .v-expansion-panel:last-child:not(:first-child),
+    .v-expansion-panels--variant-accordion > :last-child {
+      border-radius: $border-radius-bottom;
+    }
+
+    .v-expansion-panel:not(:last-child) {
+      border-bottom: none !important;
+    }
+  }
+
+  & > .v-expansion-panel:only-child {
+    border-radius: $border-radius;
+  }
+
+  #{$v-application-wrap} & {
+    &:not(.expansion-panels-width-border) {
+      .v-expansion-panel:first-child:not(:last-child),
+      .v-expansion-panels--variant-accordion > :first-child {
+        border-radius: $border-radius-top;
+      }
+
+      .v-expansion-panel:last-child:not(:first-child),
+      .v-expansion-panels--variant-accordion > :last-child {
+        border-radius: $border-radius-bottom;
+      }
+    }
+  }
+}
+
+body
+  .v-layout
+  .v-application__wrap
+  .v-expansion-panels:not(.expansion-panels-width-border)
+  .v-expansion-panel:not(:first-child, :last-child),
+body
+  .v-layout
+  .v-application__wrap
+  .v-expansion-panels:not(.expansion-panels-width-border)
+  .v-expansion-panel:not(:first-child) {
+  border-radius: 0 !important;
+}
+
+body
+  .v-layout
+  .v-application__wrap
+  .v-expansion-panels:not(.expansion-panels-width-border)
+  .v-expansion-panel:not(:last-child) {
+  margin-block-end: 0rem !important;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉 DataTable 👈👈👈👈👈👈👈👈👈👈👈👈👈          #
+//  ℹ️  Color, border, background, etc                                  #
+// <────────────────────────────────────────────────────────────────────#
+
+.v-table__wrapper {
+  overflow: auto;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 10px;
+  margin-block-end: 18px;
+}
+.v-table > .v-table__wrapper > table > tbody > tr > th,
+.v-table > .v-table__wrapper > table > thead > tr > th,
+.v-table > .v-table__wrapper > table > tfoot > tr > th {
+  background-color: var(--darkblue-color) !important;
+  color: white !important;
+  font-weight: 700;
+  text-align: start;
+  text-transform: none !important;
+  user-select: none;
+}
+
+.v-table .v-table__wrapper > table > tbody > tr:nth-of-type(odd) > td,
+.v-table .v-table__wrapper > table > tbody > tr:nth-of-type(odd) > th {
+  background-color: #fafafa !important;
+}
+
+.v-table {
+  --v-table-row-height: 56px;
+  --v-table-header-height: 48px !important;
+
+  color: var(--black-color) !important;
+}
+.v-data-table__thead
+  .v-checkbox-btn
+  .v-selection-control__input
+  .v-icon.iconify--custom {
+  border: 1px solid white;
+  border-radius: 4px;
+  block-size: 1.125rem !important;
+  font-size: 1.125rem !important;
+  inline-size: 1.125rem !important;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉👉 Dialogs 👈👈👈👈👈👈👈👈👈👈👈👈👈          #
+//  ℹ️  Color, border, background, etc                                  #
+// <────────────────────────────────────────────────────────────────────#
+
+//  ℹ️ Dialog Header bg and text color,
+.dialog-header {
+  background-color: var(--darkblue-color);
+  color: #fff;
+}
+//  ℹ️ Dialog Header bg and text color for Delete Modal,
+.dialog-header-delete {
+  background-color: var(--darkred-color);
+  color: #fff;
+}
+.dialog-title {
+  font-size: 22px;
+}
+// Dialog Header height
+.v-card {
+  .v-card-title {
+    line-height: 2.65rem !important;
+  }
+  .v-row {
+    overflow-x: auto;
+  }
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉👉 Fields 👈👈👈👈👈👈👈👈👈👈👈👈👈            #
+//  ℹ️  Fields properties                                               #
+// <────────────────────────────────────────────────────────────────────#
+
+// ℹ️ Label Text for Fields
+.field-label-text,
+.text-subtitle-1 {
+  color: var(--black-color);
+  font-size: 16px !important;
+  font-weight: 600;
+}
+// ℹ️ Required field properties
+.required-field {
+  .text-subtitle-1 {
+    color: var(--black-color);
+  }
+  // ℹ️ Error message upon validation fail
+  .text-subtitle-1::after {
+    display: inline-block;
+    color: red;
+    content: '*';
+    margin-inline-start: 4px;
+  }
+}
+
+// ℹ️ Disabled field properties
+.v-input--disabled .v-input__details,
+.v-input--disabled .v-input__prepend,
+.v-input--disabled .v-input__append,
+.v-input--disabled {
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.v-input--readonly.v-text-field:not(.v-select) {
+  border-radius: 26px;
+  background-color: #f1f1f1;
+}
+
+// ℹ️ Fix the fields start area to be bigger so it can have bigger radius...pretty tricky!
+// ℹ️ Else it has a maximum radius that doesn't show correct on pill variant
+.v-field--variant-outlined .v-field__outline__start {
+  flex: 0 0 27px !important;
+  border-block-end-width: var(--v-field-border-width);
+  border-block-start-width: var(--v-field-border-width);
+  border-inline-start-width: var(--v-field-border-width);
+}
+
+.v-field__input {
+  color: #000 !important;
+}
+
+.v-field--disabled {
+  background: rgb(226, 226, 226);
+  opacity: 1;
+}
+
+.v-field {
+  background: white;
+}
+.v-field--disabled {
+  background: var(--lightgray-color);
+}
+
+//  ℹ️  Fields input. We can define the size here. +0px defalut size.
+.v-field__input {
+  color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 0.009375em;
+  opacity: var(--v-high-emphasis-opacity);
+  min-height: max(
+    var(--v-input-control-height, 56px),
+    1.40625rem + var(--v-field-input-padding-top) +
+      var(--v-field-input-padding-bottom) + var(--v-input-chips-margin-bottom) +
+      0px
+  );
+  min-width: 0;
+  padding-inline-start: var(--v-field-padding-start);
+  padding-inline-end: var(--v-field-padding-end);
+  padding-top: var(--v-field-input-padding-top);
+  padding-bottom: var(--v-field-input-padding-bottom);
+  position: relative;
+  width: 100%;
+}
+// .v-field--input {
+//   border: 1px solid #000;
+//   border-radius: 30px !important;
+//   opacity: 1;
+//   pointer-events: none;
+// }
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉 Checkbox 👈👈👈👈👈👈👈👈👈👈👈👈👈            #
+//  ℹ️  Checkbox appearance                                             #
+// <────────────────────────────────────────────────────────────────────#
+
+input[type='checkbox'] {
+  // border: 1px solid #000 !important;
+  border-radius: 50% !important;
+  block-size: 35px;
+  inline-size: 20px;
+  inset-inline-start: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  // clip-path: circle(26% at 50% 50%);
+}
+.v-selection-control__input input {
+  border-radius: 2px;
+  inset-block-start: 3px;
+  inset-inline-start: 10px;
+  opacity: 1;
+}
+
+input[type='checkbox']:checked {
+  // background-color: #000;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉 Header Bar 👈👈👈👈👈👈👈👈👈👈👈👈👈         #
+//  ℹ️ Logo, Title, Notifications icon,  Profile icon, etc              #
+// <────────────────────────────────────────────────────────────────────#
+
+.layout-page-content {
+  background-color: #fff;
+}
+.layout-wrapper.layout-nav-type-horizontal .layout-navbar {
+  z-index: 11;
+  block-size: 100px;
+  border-block-end: none;
+}
+
+.layout-wrapper.layout-nav-type-horizontal .layout-navbar-and-nav-container {
+  box-shadow: none;
+}
+
+// Colors for Nav Items in blue bar
+.layout-horizontal-nav,
+.layout-nav-type-vertical .layout-vertical-nav {
+  color: white;
+}
+
+// Background color of Navigation Bar
+.layout-wrapper.layout-nav-type-horizontal .layout-horizontal-nav {
+  background-color: var(--darkblue-color);
+  margin-block-start: 0;
+
+  // margin-inline-end: 36px;
+  // margin-inline-start: 36px;
+  padding-block: 0.6875rem;
+}
+
+.layout-content-width-boxed .layout-page-content {
+  inline-size: 100%;
+  margin-inline: auto;
+  max-inline-size: 100%;
+}
+
+.layout-content-width-boxed.layout-wrapper.layout-nav-type-horizontal
+  .navbar-content-container,
+.layout-content-width-boxed.layout-wrapper.layout-nav-type-horizontal
+  .layout-footer
+  .footer-content-container,
+.layout-content-width-boxed
+  .layout-horizontal-nav
+  .horizontal-nav-content-container {
+  inline-size: 98%;
+  margin-inline: auto;
+  max-inline-size: 1500px;
+}
+
+.layout-horizontal-nav .nav-link:not(.sub-item) a.router-link-active,
+.layout-horizontal-nav
+  .nav-group:not(.sub-item).active
+  > .popper-triggerer
+  > .nav-group-label,
+.layout-nav-type-vertical
+  .layout-vertical-nav
+  .nav-link
+  > .router-link-exact-active {
+  background-color: rgb(var(--v-global-theme-primary));
+  background-color: var(--darkred-color) !important;
+  box-shadow: none;
+  color: white;
+  opacity: 1;
+}
+
+.layout-horizontal-nav .nav-link a {
+  padding-inline: 1.5rem;
+}
+
+.layout-horizontal-nav .nav-link a {
+  padding-inline: 1.5rem;
+}
+
+.layout-wrapper.layout-navbar-sticky.horizontal-nav-sticky
+  .layout-navbar-and-nav-container {
+  position: relative;
+  inset-block-start: 0;
+  will-change: transform;
+}
+
+.layout-wrapper.layout-nav-type-vertical .layout-navbar.navbar-blur::after {
+  background: #fff !important;
+  opacity: 1 !important;
+}
+
+.layout-nav-type-vertical .layout-vertical-nav .nav-link > :first-child,
+.layout-nav-type-vertical .layout-vertical-nav .nav-group > :first-child {
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  border-radius: 0;
+  background: var(--darkblue-color);
+  block-size: 2.75rem;
+  margin-block-end: 0.375rem;
+}
+
+.layout-horizontal-nav .nav-link:not(.sub-item) a.router-link-active,
+.layout-horizontal-nav
+  .nav-group:not(.sub-item).active
+  > .popper-triggerer
+  > .nav-group-label,
+.layout-nav-type-vertical
+  .layout-vertical-nav
+  .nav-link
+  > .router-link-exact-active {
+  background: var(--darkblue-color) !important;
+  box-shadow: none;
+  font-weight: 500;
+}
+
+.layout-horizontal-nav .nav-link:not(.sub-item) a.router-link-active,
+.layout-horizontal-nav
+  .nav-group:not(.sub-item).active
+  > .popper-triggerer
+  > .nav-group-label,
+.layout-nav-type-vertical
+  .layout-vertical-nav
+  .nav-link
+  > .router-link-exact-active {
+  //  background: linear-gradient(72.47deg, rgb(var(--v-global-theme-primary)) 22.16%, rgba(var(--v-global-theme-primary), 0.7) 76.47%) !important;
+  background-color: var(--darkred-color) !important;
+  box-shadow: 0 2px 6px rgba(var(--v-global-theme-primary), 0.48);
+  font-weight: 500;
+}
+
+// <────────────────────────────────────────────────────────────────────#
+// 👉👉👉👉👉👉👉👉👉👉👉👉👉👉👉 Tabs 👈👈👈👈👈👈👈👈👈👈👈👈👈            #
+//  ℹ️  Properties for Tabs                                             #
+// <────────────────────────────────────────────────────────────────────#
+
+.v-tabs.v-tabs-pill .v-slide-group-item--active.v-tab--selected {
+  background: var(--darkred-color);
+  box-shadow: none;
+  color: white;
+  min-inline-size: 150px;
+}
+
+.v-tabs.v-tabs-pill.v-slide-group-item:hover {
+  background: var(--darkred-color);
+  box-shadow: none;
+  color: white;
+  min-inline-size: 150px;
+}
+
+.v-tabs.v-tabs-pill .v-tab.v-btn {
+  border-radius: 0 !important;
+  background-color: var(--darkred-color) !important;
+  min-inline-size: 150px;
+  transition: none;
+}
+
+.v-tabs.v-tabs-pill .v-tab.v-btn:hover {
+  border-radius: 0 !important;
+  background-color: var(--darkred-color);
+  color: white;
+  transition: none;
+}
+
+.v-tab.v-tab {
+  border: 1px solid var(--darkred-color);
+  min-inline-size: 190px;
+}
+
+.v-tabs.v-tabs-pill.v-slide-group,
+.v-tabs.v-tabs-pill .v-slide-group__container {
+  box-sizing: content-box;
+  padding: 10px;
+  margin-inline-start: -4px;
+  min-block-size: 70px;
+}
+// ##############################################
+
+// Hide the default checkbox for Safari
+// .v-selection-control__input input {
+//   inset-block-start: 3px;
+//   inset-inline-start: 8px;
+//   opacity: 0;
+// }
+
+.bg-primary {
+  background: transparent !important;
+}
+.v-pagination.justify-end {
+  .v-pagination__list {
+    justify-content: flex-end;
+  }
+}
+.table-filters {
+  .v-field__prepend-inner {
+    color: var(--darkred-color);
+  }
+}
+.gray-divider {
+  border-top-color: #fff;
+}
+
+// FIX FOR CHECKBOX
+
+.v-selection-control__input input {
+  cursor: pointer;
+  position: absolute;
+  top: 2px !important;
+  left: 10px !important;
+  width: 50% !important;
+  height: 90% !important;
+  opacity: 1 !important;
+}
+
+input[type='checkbox'] {
+  border-radius: 50% !important;
+  block-size: 10px;
+  inline-size: 10px;
+  inset-inline-start: 8px;
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+.ql-editor {
+  min-height: 150px;
+}
+.nav-link.sub-item a {
+  color: var(--black-color);
+}
+
+.v-field {
+  border-radius: 25px !important;
+}
+
+// FIX datatable expand beyond limits when checkbox appear
+.v-card-text {
+  font-size: 0.8375rem !important;
+}
+
+// .list__tile__sub-title, .list__tile__title {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   height: 24px;
+// }
+
+// .v-data-table__td {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   max-width: 250px;
+// }
+
+
+.v-textarea .v-field__input {
+  min-height: 120px;
+}
+
+.tiptap-disabled{
+  border: 1px solid #C8C7CB;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #FBFBFB;
+}

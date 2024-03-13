@@ -1,0 +1,48 @@
+{
+  "include": [
+    "./vite.config.*",
+    "./src/**/*",
+    "./src/**/*.vue",
+    "./themeConfig.js"
+, "tests/unit/ActionBtn.spec.js", "tests/unit/EntityEdit.spec.js", "tests/unit/EntityEditSection.spec.js", "tests/unit/EntityList.spec.js", "tests/unit/EntitySingle.spec.js", "tests/unit/FormField.spec.js", "tests/unit/OrganizationSingle.spec.js", "tests/unit/SecondaryTable.spec.js", "tests/unit/TableFilters.spec.js", "tests/unit/UsersList.spec.js"  ],
+  "exclude": [
+    "./dist",
+    "./node_modules"
+  ],
+  "compilerOptions": {
+        "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@themeConfig": [
+        "./themeConfig.js"
+      ],
+      "@layouts/*": [
+        "./src/@layouts/*"
+      ],
+      "@layouts": [
+        "./src/@layouts"
+      ],
+      "@core/*": [
+        "./src/@core/*"
+      ],
+      "@core": [
+        "./src/@core"
+      ],
+      "@images/*": [
+        "./src/assets/images/*"
+      ],
+      "@styles/*": [
+        "./src/assets/styles/*"
+      ],
+    },
+    "types": [
+      "vite/client",
+      "vite-plugin-vue-layouts/client"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    />
+    <title>Ιερά Μονή Αγίου Παντελεήμονος</title>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="/loader.css"
+    />
+    <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+    />
+    <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+            rel="stylesheet"
+    />
+</head>
+
+<body>
+<div id="app">
+    <div id="loading-bg">
+        <div class="loading">
+            <div class="effect-1 effects"></div>
+            <div class="effect-2 effects"></div>
+            <div class="effect-3 effects"></div>
+        </div>
+        <div class="loading-logo">
+            <img
+                    src="@/assets/logo.svg"
+                    width="256"
+                    alt="Ιερά Μονή Αγίου Παντελεήμονος"
+            />
+        </div>
+    </div>
+</div>
+<script
+        type="module"
+        src="/src/main.js"
+></script>
+<script>
+	const loaderColor = localStorage.getItem('initial-loader-bg') || '#FFFFFF'
+	const primaryColor = localStorage.getItem('initial-loader-color') || '5F0404'
+
+	if (loaderColor)
+		document.documentElement.style.setProperty(
+			'--initial-loader-bg',
+			loaderColor,
+		)
+
+	if (primaryColor)
+		document.documentElement.style.setProperty(
+			'--initial-loader-color',
+			primaryColor,
+		)
+</script>
+</body>
+</html>
